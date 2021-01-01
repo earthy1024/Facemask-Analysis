@@ -47,7 +47,7 @@ def createModel():
                   loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
                   metrics=['accuracy'])
 
-    epochs=3
+    epochs=6
     history = model.fit(train, validation_data=validation, epochs=epochs)
     return model
 
